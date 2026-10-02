@@ -1,0 +1,16 @@
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\bin\Debug\net9.0\JuegoDomino.Aplicacion.deps.json
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\bin\Debug\net9.0\JuegoDomino.Aplicacion.dll
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\bin\Debug\net9.0\JuegoDomino.Aplicacion.pdb
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\bin\Debug\net9.0\JuegoDominio.Dominio.dll
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\bin\Debug\net9.0\JuegoDominio.Dominio.pdb
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.sourcelink.json
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDom.6B0028D2.Up2Date
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.dll
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\refint\JuegoDomino.Aplicacion.dll
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\JuegoDomino.Aplicacion.pdb
+C:\Users\Usuario\source\repos\JuegoDomino\JuegoDomino.Aplicacion\obj\Debug\net9.0\ref\JuegoDomino.Aplicacion.dll

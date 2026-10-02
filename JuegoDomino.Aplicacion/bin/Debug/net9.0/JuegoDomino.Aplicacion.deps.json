@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "JuegoDomino.Aplicacion/1.0.0": {
+        "dependencies": {
+          "JuegoDominio.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "JuegoDomino.Aplicacion.dll": {}
+        }
+      },
+      "JuegoDominio.Dominio/1.0.0": {
+        "runtime": {
+          "JuegoDominio.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JuegoDomino.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JuegoDominio.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
