@@ -1,49 +1,49 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net9.0": {
-      "JuegoDominio.Dominio/1.0.0": {
+      "JuegoDomino.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/JuegoDominio.Dominio.dll": {}
+          "bin/placeholder/JuegoDomino.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/JuegoDominio.Dominio.dll": {}
+          "bin/placeholder/JuegoDomino.Dominio.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "JuegoDominio.Dominio/1.0.0": {
+    "JuegoDomino.Dominio/1.0.0": {
       "type": "project",
-      "path": "../JuegoDominio.Dominio/JuegoDominio.Dominio.csproj",
-      "msbuildProject": "../JuegoDominio.Dominio/JuegoDominio.Dominio.csproj"
+      "path": "../JuegoDominio.Dominio/JuegoDomino.Dominio.csproj",
+      "msbuildProject": "../JuegoDominio.Dominio/JuegoDomino.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "JuegoDominio.Dominio >= 1.0.0"
+      "JuegoDomino.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\deyner.romero\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj",
       "projectName": "JuegoDomino.Aplicacion",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\JuegoDomino\\JuegoDomino.Aplicacion\\obj\\",
+      "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj",
+      "packagesPath": "C:\\Users\\deyner.romero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deyner.romero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -52,15 +52,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/sincosoftsas/_packaging/SincoERPAutentication/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDominio.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDominio.Dominio.csproj"
+            "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDomino.Dominio.csproj": {
+              "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDomino.Dominio.csproj"
             }
           }
         }
@@ -75,10 +76,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "imports": [
           "net461",
@@ -96,7 +98,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

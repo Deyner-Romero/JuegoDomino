@@ -1,0 +1,13 @@
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\bin\Debug\net9.0\JuegoDomino.Dominio.deps.json
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\bin\Debug\net9.0\JuegoDomino.Dominio.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\bin\Debug\net9.0\JuegoDomino.Dominio.pdb
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.AssemblyInfoInputs.cache
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.AssemblyInfo.cs
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.sourcelink.json
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\refint\JuegoDomino.Dominio.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.pdb
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\ref\JuegoDomino.Dominio.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDom.B789EB99.Up2Date
