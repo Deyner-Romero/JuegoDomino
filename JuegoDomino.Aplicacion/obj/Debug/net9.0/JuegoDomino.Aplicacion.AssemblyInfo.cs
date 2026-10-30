@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4e7e65524027c751e560f12781890bd06551f72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e34cd4595b22f4d219897a720f9bfc841c2127be")]
 [assembly: System.Reflection.AssemblyProductAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v9.0": {
       "JuegoDomino.Aplicacion/1.0.0": {
         "dependencies": {
-          "JuegoDominio.Dominio": "1.0.0"
+          "JuegoDomino.Dominio": "1.0.0"
         },
         "runtime": {
           "JuegoDomino.Aplicacion.dll": {}
         }
       },
-      "JuegoDominio.Dominio/1.0.0": {
+      "JuegoDomino.Dominio/1.0.0": {
         "runtime": {
-          "JuegoDominio.Dominio.dll": {
+          "JuegoDomino.Dominio.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -30,7 +30,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "JuegoDominio.Dominio/1.0.0": {
+    "JuegoDomino.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

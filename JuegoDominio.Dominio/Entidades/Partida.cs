@@ -3,7 +3,7 @@ using JuegoDominio.Dominio.Interfaces;
 
 namespace JuegoDominio.Dominio.Entidades
 {
-    public class Partida
+    public class Partida : IObservadorRonda
     {
         private Dictionary<Jugador, int> marcador = new();
         private Dictionary<Pareja, int> marcadorPorPareja = new();
@@ -32,6 +32,21 @@ namespace JuegoDominio.Dominio.Entidades
         }
 
         public Resultado JugarRonda(Ronda ronda)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void FichaJugada(Jugador j, Jugada jugada)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TurnoPasado(Jugador j)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RondaFinalizada(Resultado r)
         {
             throw new NotImplementedException();
         }

@@ -10,4 +10,3 @@ C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\D
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\refint\JuegoDomino.Dominio.dll
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDomino.Dominio.pdb
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\ref\JuegoDomino.Dominio.dll
-C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDominio.Dominio\obj\Debug\net9.0\JuegoDom.B789EB99.Up2Date
