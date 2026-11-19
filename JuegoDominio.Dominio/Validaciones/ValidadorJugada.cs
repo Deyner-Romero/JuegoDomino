@@ -4,15 +4,22 @@ namespace JuegoDominio.Dominio.Validaciones
     {
         private ValidadorJugada? siguiente;
 
-        public virtual ValidadorJugada Enlazar(ValidadorJugada validador)
+        public ValidadorJugada Enlazar(ValidadorJugada validador)
         {
             siguiente = validador;
             return validador;
         }
 
-        public virtual ResultadoValidacion Validar(ContextoJugada contexto)
+        public ResultadoValidacion Validar(ContextoJugada contexto)
         {
-            throw new NotImplementedException();
+            var resultado = Revisar(contexto);
+
+            if (!resultado.EsValida || siguiente is null)
+                return resultado;
+
+            return siguiente.Validar(contexto);
         }
+
+        protected abstract ResultadoValidacion Revisar(ContextoJugada contexto);
     }
 }

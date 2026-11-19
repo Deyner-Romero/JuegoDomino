@@ -2,14 +2,12 @@ namespace JuegoDominio.Dominio.Validaciones
 {
     public class ValidarFichaEnMano : ValidadorJugada
     {
-        public override ValidadorJugada Enlazar(ValidadorJugada validador)
+        protected override ResultadoValidacion Revisar(ContextoJugada contexto)
         {
-            return base.Enlazar(validador);
-        }
+            if (!contexto.Jugador.Tiene(contexto.Jugada.Ficha))
+                return ResultadoValidacion.Error($"{contexto.Jugador.Nombre} no tiene la ficha {contexto.Jugada.Ficha}.");
 
-        public override ResultadoValidacion Validar(ContextoJugada contexto)
-        {
-            throw new NotImplementedException();
+            return ResultadoValidacion.Ok();
         }
     }
 }

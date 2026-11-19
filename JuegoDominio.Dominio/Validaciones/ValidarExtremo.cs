@@ -2,14 +2,12 @@ namespace JuegoDominio.Dominio.Validaciones
 {
     public class ValidarExtremo : ValidadorJugada
     {
-        public override ValidadorJugada Enlazar(ValidadorJugada validador)
+        protected override ResultadoValidacion Revisar(ContextoJugada contexto)
         {
-            return base.Enlazar(validador);
-        }
+            if (!contexto.Tablero.JugadaValida(contexto.Jugada))
+                return ResultadoValidacion.Error($"La ficha {contexto.Jugada.Ficha} no coincide con el extremo {contexto.Jugada.Extremo}.");
 
-        public override ResultadoValidacion Validar(ContextoJugada contexto)
-        {
-            throw new NotImplementedException();
+            return ResultadoValidacion.Ok();
         }
     }
 }

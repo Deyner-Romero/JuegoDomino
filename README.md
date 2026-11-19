@@ -146,7 +146,7 @@ Cada responsabilidad va a la clase que tiene la información para cumplirla, y t
 | Rol | Clase |
 |---|---|
 | Manejador | `ValidadorJugada` (`Enlazar`, `Validar`) |
-| Manejadores concretos | `ValidarTurno`, `ValidarFichaEnMano`, `ValidadorSalida`, `ValidarExtremo` |
+| Manejadores concretos | `ValidarTurno`, `ValidarFichaEnMano`, `ValidarSalida`, `ValidarExtremo` |
 | Petición | `ContextoJugada` (ronda, jugador, jugada) → `ResultadoValidacion` |
 | Cliente | `Jugador.RealizarTurno` |
 | Ensamblador | `PartidaBuilder` arma la cadena |
@@ -155,7 +155,7 @@ Cada responsabilidad va a la clase que tiene la información para cumplirla, y t
 var validarTurno = new ValidarTurno();
 validarTurno
     .Enlazar(new ValidarFichaEnMano())
-    .Enlazar(new ValidadorSalida())
+    .Enlazar(new ValidarSalida())
     .Enlazar(new ValidarExtremo());
 ```
 

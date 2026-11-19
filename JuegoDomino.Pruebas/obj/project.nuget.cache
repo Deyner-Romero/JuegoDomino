@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcxTXFC/aOY=",
+  "dgSpecHash": "nYpFOaugJSs=",
   "success": true,
-  "projectFilePath": "c:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
+  "projectFilePath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\deyner.romero\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\deyner.romero\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

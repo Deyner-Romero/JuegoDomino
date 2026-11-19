@@ -12,7 +12,7 @@ namespace JuegoDomino.Aplicacion.Builder
 
             validarTurno
                 .Enlazar(new ValidarFichaEnMano())
-                .Enlazar(new ValidadorSalida())
+                .Enlazar(new ValidarSalida())
                 .Enlazar(new ValidarExtremo());
 
             cadenaValidacion = validarTurno;
