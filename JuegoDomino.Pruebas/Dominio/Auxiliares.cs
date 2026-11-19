@@ -38,7 +38,6 @@ namespace JuegoDomino.Pruebas.Dominio
         public void PartidaFinalizada(Partida partida) => PartidasFinalizadas++;
     }
 
-    /// <summary>Simula un bot con un error: siempre intenta jugar una ficha que no tiene.</summary>
     public class JugadorTramposo : Jugador
     {
         public JugadorTramposo() : base("Tramposo")
@@ -49,7 +48,6 @@ namespace JuegoDomino.Pruebas.Dominio
             new(new Ficha(0, 0), JuegoDominio.Dominio.Enumeraciones.Extremo.Derecho);
     }
 
-    /// <summary>Simula a un humano: la primera vez se equivoca y, tras el rechazo, elige bien.</summary>
     public class JugadorQueSeEquivoca : Jugador
     {
         private bool yaSeEquivoco;

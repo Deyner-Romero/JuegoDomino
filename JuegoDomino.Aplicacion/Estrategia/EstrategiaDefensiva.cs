@@ -4,10 +4,6 @@ using JuegoDomino.Aplicacion.Interface;
 
 namespace JuegoDomino.Aplicacion.Estrategia
 {
-    /// <summary>
-    /// Prefiere la jugada que deja abierto el número del que más fichas le quedan,
-    /// para asegurarse de poder seguir jugando en el próximo turno.
-    /// </summary>
     public class EstrategiaDefensiva : IEstrategiaJugador
     {
         public Jugada Elegir(Tablero tablero, IReadOnlyList<Jugada> posibles, IReadOnlyList<Ficha> mano) =>

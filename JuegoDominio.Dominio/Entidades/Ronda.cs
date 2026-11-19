@@ -12,8 +12,6 @@ namespace JuegoDominio.Dominio.Entidades
         private readonly List<IObservadorRonda> observadores = new();
         private int posicionEnTurno;
 
-        /// <param name="jugadores">Jugadores en orden de mesa, con sus fichas ya repartidas.</param>
-        /// <param name="rondaAnterior">Resultado de la ronda anterior, o <c>null</c> si es la primera.</param>
         public Ronda(IReadOnlyList<Jugador> jugadores, IReadOnlyList<Pareja> parejas, IReglas reglas, ValidadorJugada validador, Resultado? rondaAnterior = null)
         {
             this.jugadores = jugadores;

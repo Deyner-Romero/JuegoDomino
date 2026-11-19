@@ -13,8 +13,6 @@ namespace JuegoDominio.Dominio.Entidades
         private readonly ValidadorJugada validador;
         private readonly Random? azar;
 
-        /// <param name="jugadores">Jugadores en orden de mesa (en parejas: A1, B1, A2, B2).</param>
-        /// <param name="azar">Generador para barajar; se pasa con semilla fija en las pruebas.</param>
         public Partida(IReadOnlyList<Jugador> jugadores, IReadOnlyList<Pareja> parejas, IReglas reglas, ValidadorJugada validador, Random? azar = null)
         {
             if (jugadores.Count != reglas.NumeroDeJugadores)
@@ -49,7 +47,6 @@ namespace JuegoDominio.Dominio.Entidades
 
         public int PuntosDe(Pareja pareja) => marcadorPorPareja.GetValueOrDefault(pareja);
 
-        /// <summary>Los observadores se suscriben a cada ronda nueva y reciben el fin de la partida.</summary>
         public void Suscribir(IObservadorRonda observador)
         {
             if (!observadores.Contains(observador))

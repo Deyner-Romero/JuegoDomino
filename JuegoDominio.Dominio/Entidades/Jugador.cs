@@ -31,12 +31,6 @@ namespace JuegoDominio.Dominio.Entidades
 
         public bool Tiene(Ficha ficha) => fichas.Contains(ficha);
 
-        /// <summary>
-        /// Template Method: el flujo del turno es el mismo para todos los jugadores.
-        /// Las subclases solo deciden la jugada (<see cref="ElegirJugada"/>) y,
-        /// si quieren, cómo reaccionar a una jugada rechazada (<see cref="JugadaRechazada"/>).
-        /// </summary>
-        /// <returns>La jugada realizada, o <c>null</c> si el jugador pasa.</returns>
         public Jugada? RealizarTurno(Tablero tablero, ValidadorJugada validador, Jugador jugadorEnTurno, Ficha? fichaDeSalida = null)
         {
             var posibles = JugadasPosibles(tablero, fichaDeSalida);
@@ -62,10 +56,6 @@ namespace JuegoDominio.Dominio.Entidades
 
         protected abstract Jugada ElegirJugada(Tablero tablero, IReadOnlyList<Jugada> posibles);
 
-        /// <summary>
-        /// Gancho del Template Method. Por defecto una jugada inválida es un error del jugador
-        /// automático; el jugador humano lo sobrescribe para mostrar el mensaje y volver a pedir.
-        /// </summary>
         protected virtual void JugadaRechazada(ResultadoValidacion resultado) =>
             throw new InvalidOperationException($"{Nombre} eligió una jugada inválida: {resultado.Mensaje}");
 

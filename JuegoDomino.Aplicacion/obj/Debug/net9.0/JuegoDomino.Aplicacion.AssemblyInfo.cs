@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e7d18a067f686f5393e24ad83a3b79a77f10f8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f61c7a213729a9418b98e6f51ee1ba91727ecf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JuegoDomino.Aplicacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
