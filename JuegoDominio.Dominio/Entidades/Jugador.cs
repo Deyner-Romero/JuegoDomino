@@ -2,31 +2,35 @@ namespace JuegoDominio.Dominio.Entidades
 {
     public abstract class Jugador
     {
-        public List<Ficha> Fichas = new();
+        private readonly List<Ficha> fichas = new();
 
-        public string Nombre { get; set; } = string.Empty;
-        public int PuntosEnMano { get; set; }
-
-        public int FichasRestantes()
+        protected Jugador(string nombre)
         {
-            throw new NotImplementedException();
+            Nombre = nombre;
         }
 
-        public void RecibirFichas(List<Ficha> fichas)
+        public string Nombre { get; }
+        public IReadOnlyList<Ficha> Fichas => fichas;
+        public int FichasRestantes => fichas.Count;
+        public bool SinFichas => fichas.Count == 0;
+        public int PuntosEnMano => fichas.Sum(ficha => ficha.Puntos);
+
+        public void RecibirFichas(IEnumerable<Ficha> nuevasFichas)
         {
-            throw new NotImplementedException();
+            fichas.Clear();
+            fichas.AddRange(nuevasFichas);
         }
 
         public void Jugar(Ficha ficha)
         {
-            throw new NotImplementedException();
+            if (!fichas.Remove(ficha))
+                throw new InvalidOperationException($"{Nombre} no tiene la ficha {ficha}.");
         }
 
-        public bool Tiene(Ficha ficha)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Tiene(Ficha ficha) => fichas.Contains(ficha);
 
         public abstract Jugada ElegirJugada(Tablero tablero, IEnumerable<Jugada> posibles);
+
+        public override string ToString() => Nombre;
     }
 }

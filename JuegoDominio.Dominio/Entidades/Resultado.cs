@@ -4,15 +4,11 @@ namespace JuegoDominio.Dominio.Entidades
 {
     public class Resultado
     {
-        public Jugador? Ganador { get; set; }
-        public Pareja? ParejaGanadora { get; set; }
-        public int Puntos { get; set; }
-        public Jugador? UltimoEnJugar { get; set; }
-        public TipoFin Fin { get; set; }
-
-        public Resultado Registrar()
-        {
-            throw new NotImplementedException();
-        }
+        public TipoFin Fin { get; init; }
+        public Jugador? Ganador { get; init; }
+        public Pareja? ParejaGanadora { get; init; }
+        public int Puntos { get; init; }
+        public Jugador? UltimoEnJugar { get; init; }
+        public bool HuboEmpate => Ganador is null && ParejaGanadora is null;
     }
 }
