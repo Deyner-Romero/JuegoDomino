@@ -290,6 +290,12 @@
           "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -423,6 +429,20 @@
         },
         "runtime": {
           "bin/placeholder/JuegoDomino.Aplicacion.dll": {}
+        }
+      },
+      "JuegoDomino.Consola/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "JuegoDomino.Aplicacion": "1.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1"
+        },
+        "compile": {
+          "bin/placeholder/JuegoDomino.Consola.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JuegoDomino.Consola.dll": {}
         }
       },
       "JuegoDomino.Dominio/1.0.0": {
@@ -764,6 +784,86 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
+      "sha512": "EfYANhAWqmWKoLwN6bxoiPZSOfJSO9lzX+UrU6GVhLhPub1Hd+5f0zL0/tggIA6mRz6Ebw2xCNcIsM4k+7NPng==",
+      "type": "package",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.22.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "EULA.md",
+        "ThirdPartyNotices.txt",
+        "build/Container.props",
+        "build/Container.targets",
+        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props",
+        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets",
+        "build/Rules/GeneralBrowseObject.xaml",
+        "build/Rules/cs-CZ/GeneralBrowseObject.xaml",
+        "build/Rules/de-DE/GeneralBrowseObject.xaml",
+        "build/Rules/es-ES/GeneralBrowseObject.xaml",
+        "build/Rules/fr-FR/GeneralBrowseObject.xaml",
+        "build/Rules/it-IT/GeneralBrowseObject.xaml",
+        "build/Rules/ja-JP/GeneralBrowseObject.xaml",
+        "build/Rules/ko-KR/GeneralBrowseObject.xaml",
+        "build/Rules/pl-PL/GeneralBrowseObject.xaml",
+        "build/Rules/pt-BR/GeneralBrowseObject.xaml",
+        "build/Rules/ru-RU/GeneralBrowseObject.xaml",
+        "build/Rules/tr-TR/GeneralBrowseObject.xaml",
+        "build/Rules/zh-CN/GeneralBrowseObject.xaml",
+        "build/Rules/zh-TW/GeneralBrowseObject.xaml",
+        "build/ToolsTarget.props",
+        "build/ToolsTarget.targets",
+        "icon.png",
+        "microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
+        "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
+        "tools/Microsoft.VisualStudio.Containers.Tools.Tasks.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/System.Security.Principal.Windows.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/de/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/es/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/it/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
+        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -961,6 +1061,11 @@
       "path": "../JuegoDomino.Aplicacion/JuegoDomino.Aplicacion.csproj",
       "msbuildProject": "../JuegoDomino.Aplicacion/JuegoDomino.Aplicacion.csproj"
     },
+    "JuegoDomino.Consola/1.0.0": {
+      "type": "project",
+      "path": "../JuegoDomino/JuegoDomino.Consola.csproj",
+      "msbuildProject": "../JuegoDomino/JuegoDomino.Consola.csproj"
+    },
     "JuegoDomino.Dominio/1.0.0": {
       "type": "project",
       "path": "../JuegoDominio.Dominio/JuegoDomino.Dominio.csproj",
@@ -970,6 +1075,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "JuegoDomino.Aplicacion >= 1.0.0",
+      "JuegoDomino.Consola >= 1.0.0",
       "JuegoDomino.Dominio >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
@@ -1016,6 +1122,9 @@
             },
             "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj": {
               "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj"
+            },
+            "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino\\JuegoDomino.Consola.csproj": {
+              "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino\\JuegoDomino.Consola.csproj"
             }
           }
         }

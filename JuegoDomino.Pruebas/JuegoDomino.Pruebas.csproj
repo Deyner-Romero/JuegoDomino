@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\JuegoDominio.Dominio\JuegoDomino.Dominio.csproj" />
     <ProjectReference Include="..\JuegoDomino.Aplicacion\JuegoDomino.Aplicacion.csproj" />
+    <ProjectReference Include="..\JuegoDomino\JuegoDomino.Consola.csproj" />
   </ItemGroup>
 
 </Project>

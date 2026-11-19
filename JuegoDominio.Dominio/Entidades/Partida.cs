@@ -42,6 +42,7 @@ namespace JuegoDominio.Dominio.Entidades
         public Jugador? Ganador { get; private set; }
         public Pareja? ParejaGanadora { get; private set; }
         public bool Terminada => Estado == EstadoPartida.Finalizada;
+        public Ronda? RondaActual { get; private set; }
 
         public int PuntosDe(Jugador jugador) => marcador.GetValueOrDefault(jugador);
 
@@ -63,6 +64,7 @@ namespace JuegoDominio.Dominio.Entidades
             new JuegoDeFichas(azar: azar).Repartir(Jugadores, Reglas.FichasPorJugador);
 
             var ronda = new Ronda(Jugadores, Parejas, Reglas, validador, resultados.LastOrDefault());
+            RondaActual = ronda;
 
             // La partida se suscribe primero para que el marcador ya esté al día
             // cuando los demás observadores reciban RondaFinalizada.

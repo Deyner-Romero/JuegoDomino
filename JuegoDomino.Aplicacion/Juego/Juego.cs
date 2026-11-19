@@ -25,6 +25,7 @@ namespace JuegoDomino.Aplicacion.Juego
         public bool HayPartida => partida is not null;
         public bool Terminada => partida?.Terminada ?? false;
         public int RondasJugadas => partida?.Resultados.Count ?? 0;
+        public Tablero? Mesa => partida?.RondaActual?.Tablero;
 
         public Partida Partida => partida ?? throw new InvalidOperationException("No hay una partida creada.");
 

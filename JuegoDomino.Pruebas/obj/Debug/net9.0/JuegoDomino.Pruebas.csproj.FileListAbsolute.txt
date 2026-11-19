@@ -103,3 +103,8 @@ c:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\De
 c:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\Debug\net9.0\ref\JuegoDomino.Pruebas.dll
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Aplicacion.dll
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Aplicacion.pdb
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Consola.deps.json
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Consola.runtimeconfig.json
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Consola.exe
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Consola.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Consola.pdb
