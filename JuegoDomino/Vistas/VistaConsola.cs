@@ -19,5 +19,10 @@ namespace JuegoDomino.Consola.Vistas
         {
             throw new NotImplementedException();
         }
+
+        public void PartidaFinalizada(Partida partida)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -412,6 +412,19 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "JuegoDomino.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "JuegoDomino.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/JuegoDomino.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JuegoDomino.Aplicacion.dll": {}
+        }
+      },
       "JuegoDomino.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -943,6 +956,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "JuegoDomino.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../JuegoDomino.Aplicacion/JuegoDomino.Aplicacion.csproj",
+      "msbuildProject": "../JuegoDomino.Aplicacion/JuegoDomino.Aplicacion.csproj"
+    },
     "JuegoDomino.Dominio/1.0.0": {
       "type": "project",
       "path": "../JuegoDominio.Dominio/JuegoDomino.Dominio.csproj",
@@ -951,6 +969,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "JuegoDomino.Aplicacion >= 1.0.0",
       "JuegoDomino.Dominio >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
@@ -965,11 +984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
+      "projectUniqueName": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
       "projectName": "JuegoDomino.Pruebas",
-      "projectPath": "c:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
+      "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\JuegoDomino.Pruebas.csproj",
       "packagesPath": "C:\\Users\\deyner.romero\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\obj\\",
+      "outputPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Pruebas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -994,6 +1013,9 @@
           "projectReferences": {
             "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDomino.Dominio.csproj": {
               "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDominio.Dominio\\JuegoDomino.Dominio.csproj"
+            },
+            "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\deyner.romero\\source\\Universidad\\JuegoDomino\\JuegoDomino.Aplicacion\\JuegoDomino.Aplicacion.csproj"
             }
           }
         }

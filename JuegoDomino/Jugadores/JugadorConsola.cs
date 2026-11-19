@@ -8,7 +8,7 @@ namespace JuegoDomino.Consola.Jugadores
         {
         }
 
-        public override Jugada ElegirJugada(Tablero tablero, IEnumerable<Jugada> posibles)
+        protected override Jugada ElegirJugada(Tablero tablero, IReadOnlyList<Jugada> posibles)
         {
             throw new NotImplementedException();
         }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "JuegoDomino.Pruebas/1.0.0": {
         "dependencies": {
+          "JuegoDomino.Aplicacion": "1.0.0",
           "JuegoDomino.Dominio": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "xunit": "2.9.2"
@@ -331,6 +332,17 @@
           }
         }
       },
+      "JuegoDomino.Aplicacion/1.0.0": {
+        "dependencies": {
+          "JuegoDomino.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "JuegoDomino.Aplicacion.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "JuegoDomino.Dominio/1.0.0": {
         "runtime": {
           "JuegoDomino.Dominio.dll": {
@@ -423,6 +435,11 @@
       "sha512": "sha512-rKMpq4GsIUIJibXuZoZ8lYp5EpROlnYaRpwu9Zr0sRZXE7JqJfEEbCsUriZqB+ByXCLFBJyjkTRULMdC+U566g==",
       "path": "xunit.extensibility.execution/2.9.2",
       "hashPath": "xunit.extensibility.execution.2.9.2.nupkg.sha512"
+    },
+    "JuegoDomino.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "JuegoDomino.Dominio/1.0.0": {
       "type": "project",

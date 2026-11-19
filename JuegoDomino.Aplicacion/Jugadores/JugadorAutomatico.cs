@@ -9,8 +9,8 @@ namespace JuegoDomino.Aplicacion.Jugadores
         public JugadorAutomatico(string nombre, IEstrategiaJugador estrategia) : base(nombre) => _estrategia = estrategia;
 
         public void CambiarEstrategia(IEstrategiaJugador nuevaEstrategia) => _estrategia = nuevaEstrategia;
-        public override Jugada ElegirJugada(Tablero tablero, IEnumerable<Jugada> posibles) =>
-            _estrategia.Elegir(tablero, posibles.ToList(), Fichas);
+        protected override Jugada ElegirJugada(Tablero tablero, IReadOnlyList<Jugada> posibles) =>
+            _estrategia.Elegir(tablero, posibles, Fichas);
 
     }
 }

@@ -21,5 +21,10 @@ namespace JuegoDomino.Aplicacion.Observadores
         {
             throw new NotImplementedException();
         }
+
+        public void PartidaFinalizada(Partida partida)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

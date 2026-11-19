@@ -7,5 +7,6 @@ namespace JuegoDominio.Dominio.Interfaces
         void FichaJugada(Jugador j, Jugada jugada);
         void TurnoPasado(Jugador j);
         void RondaFinalizada(Resultado r);
+        void PartidaFinalizada(Partida partida);
     }
 }

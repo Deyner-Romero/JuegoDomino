@@ -101,3 +101,5 @@ C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\De
 C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\Debug\net9.0\JuegoDomino.Pruebas.pdb
 c:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\Debug\net9.0\JuegoDomino.Pruebas.genruntimeconfig.cache
 c:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\obj\Debug\net9.0\ref\JuegoDomino.Pruebas.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Aplicacion.dll
+C:\Users\deyner.romero\source\Universidad\JuegoDomino\JuegoDomino.Pruebas\bin\Debug\net9.0\JuegoDomino.Aplicacion.pdb

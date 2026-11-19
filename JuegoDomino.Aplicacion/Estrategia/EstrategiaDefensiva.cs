@@ -1,14 +1,38 @@
 using JuegoDominio.Dominio.Entidades;
+using JuegoDominio.Dominio.Enumeraciones;
 using JuegoDomino.Aplicacion.Interface;
 
 namespace JuegoDomino.Aplicacion.Estrategia
 {
+    /// <summary>
+    /// Prefiere la jugada que deja abierto el número del que más fichas le quedan,
+    /// para asegurarse de poder seguir jugando en el próximo turno.
+    /// </summary>
     public class EstrategiaDefensiva : IEstrategiaJugador
     {
         public Jugada Elegir(Tablero tablero, IReadOnlyList<Jugada> posibles, IReadOnlyList<Ficha> mano) =>
-        posibles.OrderByDescending(x => CuantasTieneDelNumero(x, mano)).First();
+            posibles.OrderByDescending(jugada => FichasQueSiguenSirviendo(tablero, jugada, mano)).First();
 
-        private static int CuantasTieneDelNumero(Jugada jugada, IReadOnlyList<Ficha> mano) =>
-            mano.Count(ficha => ficha.ValorDerecha == jugada.Ficha?.ValorDerecha || ficha.ValorIzquierda == jugada.Ficha?.ValorIzquierda);
+        private static int FichasQueSiguenSirviendo(Tablero tablero, Jugada jugada, IReadOnlyList<Ficha> mano)
+        {
+            var restantes = mano.Where(ficha => !ficha.Equals(jugada.Ficha)).ToList();
+            var abiertos = ValoresQueQuedanAbiertos(tablero, jugada);
+
+            return restantes.Count(ficha => abiertos.Any(ficha.ContieneValor));
+        }
+
+        private static int[] ValoresQueQuedanAbiertos(Tablero tablero, Jugada jugada)
+        {
+            var ficha = jugada.Ficha;
+
+            if (tablero.EstaVacia)
+                return [ficha.ValorIzquierda, ficha.ValorDerecha];
+
+            int extremoQueSeCubre = jugada.Extremo == Extremo.Izquierdo ? tablero.ExtremoIzquierdo!.Value : tablero.ExtremoDerecho!.Value;
+            int extremoQueNoSeToca = jugada.Extremo == Extremo.Izquierdo ? tablero.ExtremoDerecho!.Value : tablero.ExtremoIzquierdo!.Value;
+            int nuevoExtremo = ficha.ValorIzquierda == extremoQueSeCubre ? ficha.ValorDerecha : ficha.ValorIzquierda;
+
+            return [nuevoExtremo, extremoQueNoSeToca];
+        }
     }
 }

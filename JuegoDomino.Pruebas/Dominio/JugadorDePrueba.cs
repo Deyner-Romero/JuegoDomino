@@ -8,6 +8,6 @@ namespace JuegoDomino.Pruebas.Dominio
         {
         }
 
-        public override Jugada ElegirJugada(Tablero tablero, IEnumerable<Jugada> posibles) => posibles.First();
+        protected override Jugada ElegirJugada(Tablero tablero, IReadOnlyList<Jugada> posibles) => posibles.First();
     }
 }
