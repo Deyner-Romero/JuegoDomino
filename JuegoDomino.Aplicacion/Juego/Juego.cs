@@ -3,9 +3,7 @@ using JuegoDominio.Dominio.Enumeraciones;
 using JuegoDominio.Dominio.Interfaces;
 using JuegoDominio.Dominio.Reglas;
 using JuegoDomino.Aplicacion.Builder;
-using JuegoDomino.Aplicacion.Estrategia;
-using JuegoDomino.Aplicacion.Interface;
-using JuegoDomino.Aplicacion.Jugadores;
+using JuegoDomino.Aplicacion.Fabricas;
 using JuegoDomino.Aplicacion.Observadores;
 
 namespace JuegoDomino.Aplicacion.Juego
@@ -37,20 +35,23 @@ namespace JuegoDomino.Aplicacion.Juego
 
         public void NuevaPartidaIndividual(Jugador humano, int numeroDeJugadores, Dificultad dificultad, int puntosParaGanar = 80)
         {
+            var creador = CreadorPara(dificultad);
             var builder = NuevoBuilder(new ReglasTradicionales(TipoJuego.Individual, numeroDeJugadores, puntosParaGanar))
                 .AgregarJugador(humano);
 
             for (int i = 1; i < numeroDeJugadores; i++)
-                builder.AgregarJugador(CrearBot($"Bot {i}", dificultad));
+                builder.AgregarJugador(creador.Crear($"Bot {i}"));
 
             partida = builder.Build();
         }
 
         public void NuevaPartidaParejas(Jugador humano, Dificultad dificultad, int puntosParaGanar = 80)
         {
+            var creador = CreadorPara(dificultad);
+
             partida = NuevoBuilder(new ReglasTradicionales(TipoJuego.Parejas, 4, puntosParaGanar))
-                .AgregarPareja("Nosotros", humano, CrearBot("Compañero", dificultad))
-                .AgregarPareja("Ellos", CrearBot("Rival 1", dificultad), CrearBot("Rival 2", dificultad))
+                .AgregarPareja("Nosotros", humano, creador.Crear("Compañero"))
+                .AgregarPareja("Ellos", creador.Crear("Rival 1"), creador.Crear("Rival 2"))
                 .Build();
         }
 
@@ -94,13 +95,11 @@ namespace JuegoDomino.Aplicacion.Juego
             return builder;
         }
 
-        private JugadorAutomatico CrearBot(string nombre, Dificultad dificultad) => new(nombre, CrearEstrategia(dificultad));
-
-        private IEstrategiaJugador CrearEstrategia(Dificultad dificultad) => dificultad switch
+        private CreadorBot CreadorPara(Dificultad dificultad) => dificultad switch
         {
-            Dificultad.Facil => new EstrategiaAleatorea(azar),
-            Dificultad.Normal => new EstrategiaDescartarPuntos(),
-            Dificultad.Dificil => new EstrategiaDefensiva(),
+            Dificultad.Facil => new CreadorBotFacil(azar),
+            Dificultad.Normal => new CreadorBotNormal(),
+            Dificultad.Dificil => new CreadorBotDificil(),
             _ => throw new ArgumentOutOfRangeException(nameof(dificultad))
         };
     }

@@ -6,7 +6,7 @@ using JuegoDomino.Consola.Vistas;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-var entrada = new EntradaUsuario(Console.In, Console.Out);
+IEntradaUsuario entrada = new AdaptadorConsola(Console.In, Console.Out);
 var juego = new Juego();
 juego.Suscribir(new VistaConsola(juego, Console.Out, TimeSpan.FromMilliseconds(400)));
 

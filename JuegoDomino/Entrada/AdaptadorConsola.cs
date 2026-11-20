@@ -1,27 +1,26 @@
 namespace JuegoDomino.Consola.Entrada
 {
-    public class EntradaUsuario
+    public class AdaptadorConsola : IEntradaUsuario
     {
         private readonly TextReader entrada;
+        private readonly TextWriter salida;
 
-        public EntradaUsuario(TextReader entrada, TextWriter salida)
+        public AdaptadorConsola(TextReader entrada, TextWriter salida)
         {
             this.entrada = entrada;
-            Salida = salida;
+            this.salida = salida;
         }
-
-        public TextWriter Salida { get; }
 
         public int LeerOpcion(string pregunta, int minimo, int maximo)
         {
             while (true)
             {
-                Salida.Write($"{pregunta} ({minimo}-{maximo}): ");
+                salida.Write($"{pregunta} ({minimo}-{maximo}): ");
 
                 if (int.TryParse(Leer(), out int opcion) && opcion >= minimo && opcion <= maximo)
                     return opcion;
 
-                Salida.WriteLine($"Escribe un número entre {minimo} y {maximo}.");
+                salida.WriteLine($"Escribe un número entre {minimo} y {maximo}.");
             }
         }
 
@@ -29,21 +28,23 @@ namespace JuegoDomino.Consola.Entrada
         {
             while (true)
             {
-                Salida.Write($"{pregunta}: ");
+                salida.Write($"{pregunta}: ");
                 string texto = Leer().Trim();
 
                 if (texto.Length > 0)
                     return texto;
 
-                Salida.WriteLine("No puede quedar vacío.");
+                salida.WriteLine("No puede quedar vacío.");
             }
         }
 
         public void Pausa(string mensaje)
         {
-            Salida.Write(mensaje);
+            salida.Write(mensaje);
             Leer();
         }
+
+        public void Mostrar(string linea = "") => salida.WriteLine(linea);
 
         private string Leer() => entrada.ReadLine() ?? throw new EndOfStreamException("Se cerró la entrada.");
     }

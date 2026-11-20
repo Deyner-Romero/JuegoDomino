@@ -12,8 +12,8 @@ namespace JuegoDomino.Pruebas.Consola
     {
         private readonly StringWriter salida = new();
 
-        private EntradaUsuario Entrada(params string[] lineas) =>
-            new(new StringReader(string.Join(Environment.NewLine, lineas)), salida);
+        private IEntradaUsuario Entrada(params string[] lineas) =>
+            new AdaptadorConsola(new StringReader(string.Join(Environment.NewLine, lineas)), salida);
 
         [Fact]
         public void LeerOpcion_IgnoraTextoYNumerosFueraDeRango()
@@ -73,6 +73,41 @@ namespace JuegoDomino.Pruebas.Consola
 
             Assert.Equal(Extremo.Izquierdo, jugada!.Extremo);
             Assert.Equal("[5|2][2|6][6|5]", tablero.ToString());
+        }
+
+        [Fact]
+        public void JugadorConsola_FuncionaConCualquierEntradaQueCumplaLaInterfaz()
+        {
+            var entrada = new EntradaGuionada(2);
+            var jugador = new JugadorConsola("Ana", entrada);
+            jugador.RecibirFichas([new Ficha(1, 2), new Ficha(6, 6)]);
+
+            var jugada = jugador.RealizarTurno(new Tablero(), Cadena.DeValidacion(), jugador);
+
+            Assert.Equal(new Ficha(6, 6), jugada!.Ficha);
+            Assert.Contains("--- Tu turno, Ana ---", entrada.Mostrado);
+        }
+
+        private class EntradaGuionada : IEntradaUsuario
+        {
+            private readonly Queue<int> opciones;
+
+            public EntradaGuionada(params int[] opciones)
+            {
+                this.opciones = new Queue<int>(opciones);
+            }
+
+            public List<string> Mostrado { get; } = new();
+
+            public int LeerOpcion(string pregunta, int minimo, int maximo) => opciones.Dequeue();
+
+            public string LeerTexto(string pregunta) => "Ana";
+
+            public void Pausa(string mensaje)
+            {
+            }
+
+            public void Mostrar(string linea = "") => Mostrado.Add(linea);
         }
 
         [Fact]
